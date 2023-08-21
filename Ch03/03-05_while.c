@@ -4,13 +4,15 @@ int main()
 {
 	int x;
 
-	x = 1;
-	while( x <= 10 )
+	x = 2;
+	while (x <= 20)
 	{
-		printf("%d\n",x);
+		if (x % 2 == 0)
+		{
+			printf("%d\n", x);
+		}
 		x++;
 	}
 
-	return(0);
+	return (0);
 }
-
