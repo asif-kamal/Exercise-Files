@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void blorf(void);
+void blorf(void); //prototype needed or else program does not know what blorf() is on line 8
 
 int main()
 {
