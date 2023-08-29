@@ -1,11 +1,15 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
 	char first[] = "I would like to go ";
 	char second[] = "from here to there\n";
+	char buffer[64];
 
-	printf("%s\n",first+second);
+	strcpy(buffer, first);
+	strcat(buffer, second);
+	puts(buffer);
 
 	return(0);
 }
